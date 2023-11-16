@@ -1,0 +1,70 @@
+@mixin description-man
+    color: transparent
+    background: linear-gradient(11deg,rgba(24,20,20,0.87) 0%, #778677 80%)
+    background-clip: text
+@mixin title-man
+    color: transparent
+    background: linear-gradient(37deg,rgba(223,158,33,0.57) 20%, #8b892b 80%)
+    background-clip: text
+.main-man
+    &__title
+        text-align: center
+        @include title-man
+    &__description
+        font-size: 1.5rem
+        line-height: 2.5rem
+        color: #c2ffff
+        &-line-h
+            font-size: 1.3rem
+            line-height: 2rem
+    &__style
+        border: 1px solid white
+        p
+            font-size: 1.5rem
+            line-height: 2.5rem
+            color: #FFF
+.carousel-item
+    img
+        width: 65%
+        height: 400px
+        @media(max-width:768px)
+            height: 250px
+        @media(max-width:768px)
+            height: 200px
+/* Стили таблицы (IKSWEB) */
+table.iksweb
+    text-decoration: none
+    border-collapse: collapse
+    width: 100%
+    text-align: center
+    margin-bottom: 15px
+    @media screen and ( max-width:425px  )
+        text-align: inherit
+table.iksweb th
+    font-weight: normal
+    font-size: 14px
+    color: #ffffff
+    background-color: #4b47478c
+table.iksweb td
+    font-size: 1.5rem
+    color: #b6b6b6
+table.iksweb td,table.iksweb th
+    white-space: pre-wrap
+    padding: 10px 5px
+    line-height: 13px
+    vertical-align: middle
+    border: 2px solid #977822
+    background-color: #4d4d4d6b
+table.iksweb tr:hover
+    background-color: #f9fafb
+table.iksweb tr:hover td
+    color: #000000
+.cssmenu
+    padding-top: 120px
+.carousel-indicators li
+    display: none
+.carousel-indicators li.active
+    display: none!important
+#carouselExampleIndicators
+    width: 70%
+    margin: 0 auto
